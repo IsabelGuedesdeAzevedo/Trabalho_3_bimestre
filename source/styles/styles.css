@@ -1,0 +1,80 @@
+/* reset para configurações padrão da página, deixando tudo do zero */
+* {
+    margin: 0; /* sem margens */
+    padding: 0; /* sem espaçamentos */
+    box-sizing: border-box; /* faz com que a lagura e altua do conteúdo inclua a borda e o preenchimento e a borda */
+}
+
+/* conteudo do cabeçalho */
+header {
+    background-color: #222; /* plano de fundo em cinza (hexadecimal#222) */
+    color: #fff; /* conteúdo do texto em branco (hexadecimal#fff) */
+}
+
+/* conteudo da div dentro de header */
+header div {
+    display: flex; /* o conteúdo será divido flexivelmente */
+    justify-content: space-between; /* deixará um espaço igual entre os conteúdos dentro da div, utilizando toda a largura da div */
+    align-items: center; /* alinha o conteudo no centro verticalmente dentro da div */
+    margin: 0 32px; /* margem de 0 na parte de cima e de baixo, e 32 pixels na esquerda e na direita */
+}
+
+/* estilização da imagem, que está dentro da div, dentro do header */
+header div img {
+    height: 96px; /* tamanho da altura da imagem é de 96 pixels */
+}
+
+/* estilização dos itens da lista não ordenada, que está dentro de nav => div => header */
+header div nav ul li {
+    list-style: none; /* não terá estilo de lista (aquelas bolinhas) */
+}
+
+/* estilização dos links (a) nos itens da lista não ordenada, que está dentro de nav => div => header */
+header div nav ul li a {
+    color: #fff; /* conteúdo do texto em branco (hexadecimal#fff) */
+}
+
+/* estilização do conteúdo dentro de main */
+main {
+    margin: 48px; /* margem de 48 pixels na parte de cima, de baixo, na esquerda e na direita (tudo) */
+}
+
+/* estilização do conteúdo dentro da table (tabela), dentro de article => section => main */
+main section article table {
+    margin: 16px 0; /* margem de 16 pixels na parte de cima e de baixo, e 0 na esquerda e na direita */
+}
+
+/* estilização do conteúdo dentro da célula, dentro da linha (tr) => tabela (table) => article => section => main */
+main section article table tr td {
+    padding: 0 16px; /* espaçamento de 0 em cima e em baixo, e de 16 pixels na esquerda e na direita */
+    text-align: center; /* alinhamento do texto ao centro */
+}
+
+/* estilização dos links dentro da célula, dentro da linha (tr) => table (tabela) => article => section => main */
+main section article table tr td a {
+    color: #000; /* conteúdo do texto em preto (hexadecimal#000) */
+}
+
+/* estilização do conteúdo dentro de aside */
+aside {
+    margin: 48px; /* margem de 48 pixels na parte de cima, de baixo, na esquerda e na direita (tudo) */
+}
+
+/* estilização do conteúdo do h2 dentro de aside */
+aside h2 {
+    margin-top: 16px; /* margem de 16 pixels na parte de cima (top) */
+}
+
+/* estilização da imagem dentro de aside */
+aside img {
+    height: 268px; /* tamanho da altura da imagem é de 268 pixels */
+}
+
+/* estilização do conteúdo dentro do footer */
+footer {
+    padding: 16px; /* espaçamento do conteúdo(nesse caso o texto) é de 16 pixels em tudo (cima, baixo, esquerda e direita)*/
+    text-align: center; /* alinhamento do texto ao centro */
+    background-color: #222; /* plano de fundo em cinza (hexadecimal#222) */
+    color: #fff; /* conteúdo do texto em branco (hexadecimal#fff) */
+    font-size: 32px; /* tamanho da fonte do texto é de 32 pixels */
+}

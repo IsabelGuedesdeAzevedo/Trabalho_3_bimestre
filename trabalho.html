@@ -1,61 +1,94 @@
+<!-- código base html -->
 <!DOCTYPE html>
+<!-- diz que o código será escrito na lingua português do Brasil, evitando pop-up de traduzir página -->
 <html lang="pt-BR">
-<head>
+
+
+<head> <!-- onde estará todo o setup (configurações padrão) da página web -->
+    <!-- diz que o código segue o utf-8 para sistema de escrita, o que permite utilizar acentuação -->
     <meta charset="UTF-8">
+    <!-- garantir que a página seja responsiva, e se ajuste corretamente a tela do dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho Peixes betta(biologia)</title>
+    <title>Trabalho Peixes betta(biologia)</title> <!-- título que aparece na aba para abrir a página -->
+    <link rel="stylesheet" href="./source/styles/styles.css"> <!-- chama o arquivo css para estilizar o código -->
 </head>
-<body>
-    <header>
-        <div>
-            <img src="./source/imgs/betta1.jpg" alt="peixe branco">
+
+<body> <!-- chama a tag body, onde será escrito tudo o que irá (teóricamente) aparecer visualmente na página -->
+    <header> <!-- tag header, que indica o cabeçalho da página -->
+        <div> <!-- é uma divisão, que serve para criar blocos de conteúdo em uma página web -->
+            <img src="./source/imgs/betta1.jpg" alt="peixe branco"> <!-- tag img, para chamar a imagem desejada -->
+            <!-- tag h1, título mais importante da página -->
             <h1>
-                Peixes Betta(biologia)
-            </h1>
-            <nav>
-                <ul>
+                Peixes Betta(biologia) <!-- conteúdo do h1 -->
+            </h1> <!-- fechamento do h1 -->
+            <nav> <!-- tag nav (navigator), uma seção de navegação da página -->
+                <ul> <!-- lista não ordenada -->
+                    <!-- itens da lista -->
                     <li><a href="https://www.youtube.com/watch?v=UTnRXbbqFBg" target="_blank">Como cuidar</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=vo99l-U3bGE&t=214s" target="_blank">Na natureza</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=60arqik1ORc" target="_blank">Aquários comunitários</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=vo99l-U3bGE&t=214s" target="_blank">Na natureza</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/watch?v=60arqik1ORc" target="_blank">Aquários comunitários</a>
+                    </li>
                 </ul>
-                <h4>Fatos que poucos sabem</h4>
-                <ol>
-                    <li>Com bons cuidados eles vivem uma média de cinco anos.</li>
-                    <li>Podem pular aproximadamente 3 centimetros pra fora da água</li>
-                    <li>São os Peixes betta macho que fazem o ninho e cuidam dos filhotes.</li>
-                    <li>Betas adoram explorar e nadar, odeiam aquarios pequenos.</li>
-                    <li>São carnivoros e sim, podem te morder (tive um que me mordeu).</li>
-                    <li>Eles podem aprender truques como qualque outro pet.</li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-    <aside>
-        <h3>
-            Betta splendens é uma espécie de peixe da família Osphronemidae e do gênero taxonômico Betta, originária do Sudeste Asiático.
-             A espécie é conhecida popularmente como betta, peixe-beta ou combatente e peixe-de-briga-siamês, devido à sua agressividade contra outros peixes.
-        </h3>
-        <!--bota no css a-->
-        <h2>Exemplo de beta femea (koi)</h2>
-        <img src="./source/imgs/koi_betta.webp" alt="">
-    </aside>
-    <main>
-        <section>
-            <article>
-                <table>
+            </nav> <!-- fechamento da tag nav -->
+        </div> <!-- fechamento da div -->
+    </header> <!-- fechamento do header (tudo desde onde foi chamado o header, estava dentro dele) -->
+
+    <main> <!-- todo o conteúdo principal do site -->
+        <section> <!-- bloco de seção -->
+            <article> <!-- conteúdo de informação dentro de um documento, como posts de um blog, ou artigos de noticia, etc... -->
+                <h5>Imagens de raças de betta</h5>
+                <table> <!-- tabela para exibir dados de maneira organizada, em linhas e colunas -->
+                    <tr> <!-- linha da tabela -->
+                        <!-- célula de dados da tabela -->
+                        <td>peixe betta Veil Tail</td>
+                        <td>peixe betta Delta</td>
+                    </tr>
                     <tr>
-                        <td>peixe1</td>
-                        <td>peixe2</td>
+                        <td> <!-- célula de dados da tabela -->
+                            <a href="https://t3.ftcdn.net/jpg/03/40/85/44/360_F_340854476_6auuQYhBtDwh7Tpko4aGNfVcXEoX7Ec4.jpg">
+                                imagem
+                            </a>
+                        </td> <!-- fechamento da célula de dados da tabela -->
+                        <td> <!-- célula de dados da tabela -->
+                            <a href="https://thumbs.dreamstime.com/z/delta-betta-peixe-popular-isolado-em-fundo-branco-fish-%C3%A9-uma-subesp%C3%A9cie-espantosa-do-comum-estes-peixes-s%C3%A3o-%C3%BAnicos-porque-271212342.jpg">
+                                imagem
+                            </a>
+                        </td> <!-- fechamento da célula de dados da tabela -->
                     </tr>
                 </table>
             </article>
         </section>
+        <section>
+            <h4>Fatos que poucos sabem</h4> <!-- título com quarto nível de importância na página -->
+            <ol> <!-- lista ordenada (1, 2, 3... || a, b, c...) -->
+                <!-- itens da lista -->
+                <li>Com bons cuidados eles vivem uma média de cinco anos.</li>
+                <li>Podem pular aproximadamente 3 centimetros pra fora da água</li>
+                <li>São os Peixes betta macho que fazem o ninho e cuidam dos filhotes.</li>
+                <li>Betas adoram explorar e nadar, odeiam aquarios pequenos.</li>
+                <li>São carnivoros e sim, podem te morder (tive um que me mordeu).</li>
+                <li>Eles podem aprender truques como qualque outro pet.</li>
+            </ol>
+        </section>
     </main>
-    <footer>
-        <h6>&copy; 2024.</h6>
-        <p>desenvolvido por Isabel.</p>
+
+    <!-- tag aside => normalmente para conteúdos relacionais ao central, sendo muito utilizado como barra lateral -->
+    <aside>
+        <h3>Betta splendens</h3> <!-- título com terceiro nível de importância na página -->
+        <p> <!-- paragráfo -->
+            Betta splendens é uma espécie de peixe da família Osphronemidae e do gênero taxonômico Betta, originária do
+            Sudeste Asiático.
+            A espécie é conhecida popularmente como betta, peixe-beta ou combatente e peixe-de-briga-siamês, devido à
+            sua agressividade contra outros peixes.
+        </p>
+        <h2>Exemplo de beta femea (koi)</h2> <!-- título com segundo nível de importância na página -->
+        <img src="./source/imgs/koi_betta.webp" alt="">
+    </aside>
+
+    <footer> <!-- chamda do rodapé -->
+        <h6>&copy; 2024. Desenvolvido por Isabel.</h6> <!-- título com sexto nível de importância na página -->
     </footer>
 </body>
+
 </html>
-
-
